@@ -1,0 +1,11 @@
+language: python
+script:
+- bash -x test.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: QYaBjzF5hd+SuNMg1S42hoiHR/Ml84LfXM7VHMCgWNQmHE11K8zmMbSg9B79anpFbjkiUoX3rLeK9ekfNciSz2hBO7IgvnFE41oI3ksetnZE9fSG5p9p2r3rFjQ7hHEUwpq3e1/vFb9fzwTXF8u6sQA09f9IMzMzugCmnkpVb0XpyobPkiapMMHGtZrR6LOZ4Vmhw+13UWqQdbL0g810jjDzzGE1G0ya7Ck2TSQCFIVwoY2tECukC2ijdSuHXKcHldgilel9g3eu1YZBhpwwVRuj8sdBuByKXuwHisEuDIyEwB6EP0iXhkB/nMZeYQ6MGPaj5rCt6RCznDzNMt/Y42fCm/09NVef3P+kBIkD/3O4C7d3KrKE49IXHU7SRxPcdvMaQPoTyKmujpIGTk2erTexinYlaV280jn29g0ujk78mtRwGeZ+MboWlZ7tJjoQngtmktYDxuKf2+FBNA8SjrmD0li9TaGJybfqyuEzTlL9VSgEQn2tplfw1S0th2mMBbylMLianDdkZOPghNrj3CZFksxQkYJO2sG6KquuF0Cit2MOOSJ6MB1Czd3Hzy7zir8uTzQYAo3iqRHxqBnvGbxtQeIUhVvOhcw5CDB9zgLsJIK8zhzuxjQCTrctjLAK13KJJK4Jz1SOyMU+G3zWrMYrpgq5SB6TTNy32gqNyNU=
+  file: hello.sh
+  on:
+    repo: chavo1/hello-shell
+    tags: true
