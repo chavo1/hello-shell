@@ -8,3 +8,4 @@ deploy:
   file: hello.sh
   on:
     repo: chavo1/hello-shell
+    tag: true
