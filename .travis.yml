@@ -1,4 +1,4 @@
-language: python
+language: generic
 script:
 - bash -x test.sh
 deploy:
